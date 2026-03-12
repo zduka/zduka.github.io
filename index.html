@@ -1,0 +1,453 @@
+﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I build. Compilers, virtual machines, tools for other programmers and toys for kids, furniture. I also teach - programming and compilers mostly.">
+    <meta name="author" content="Petr Maj">
+
+    <title>Petr Maj</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76230115-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" id="brand" href="#page-top"><img id="zduka" alt="zduka" src="zduka.png" /> About</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#cv">CV</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="jumbotron" id="about">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="ja2.jpg" alt="photo" id="photo" />
+                            </div>
+                            <div class="col-md-7">
+                                <p><strong>I build.</strong> Compilers, virtual machines, tools for other programmers and toys for kids, furniture. I also teach - programming and compilers mostly. I am a parent of two, and a cat person.
+                                </p>
+                                <p>I work for <a href="http://azul.com" target="blank">Azul</a> on the fastest Java virtual machine - Zing, and I teach at <a href="https://www.fit.cvut.cz/en" target="blank">FIT CTU</a>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Projects</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <a href="https://github.com/rc-kid/rckid">RCKid</a>
+                                <span class="label label-success">WiP</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                RCKid is a handheld gaming device for young kids. Build for my two betatesters to spare them the horrors of youtube:) On the surface this is just another DIY little gaming handheld, but under the hood it is much more - the first truly personal device for a child that emphasizes creation over consumption, invites learning and tinkering and is designed to grow with the child. It went through <em>many</em> iterations and has a <a href="https://github.com/rc-kid/rckid/blob/main/VISION.md" target="blank">grand vision</a>.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <a href="https://zduka.github.io/mp3-player/" target="blank">MP3 Player for Kids</a>
+                            </h4>
+                            <p class="list-group-item-text">
+                                MP3 player with integrated radio built for small kids in a pretty wooden case. I got inspired for this when I watched by young daughter pretending to listen to music and control it via the buttons you often find on arm chairs. This shaped the device's control interface and its formfactor. Internally it uses ESP8266 for the MP3 playback a WiFi access and ATTiny3216 for the io/power management. 
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <a href="https://terminalpp.com">Terminalpp</a>
+                            </h4>
+                            <p class="list-group-item-text">
+                                A <em>really</em> fast and no-nonsense terminal emulator with real cross platform support and some nifty features. The project started because I could not find a decent terminal emulator for Windows, despite the emerging WSL (back then, this predates the Windows Terminal that exists since and which is not bad at all. That said, I am still using my terminalpp to this day:). The terminal bypasses the conpty on Windows giving it absolute compatibility with escape sequences, uses native renderers on Windows and Linux (QT for apple) and comes with <em>ropen</em>, a tool that can use existig terminal connection to send files from remote servers to be viewed locally - super useful for those non-terminal friendly outputs like pdfs, images, etc.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                MagicWeb
+                                <span class="label label-default">old:)</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                My first <em>big</em> project back when I was studying high school in the early noughties, I thought having a web page is really cool. Back then I was working with Delphi, which was amazing RAD IDE, and I lacked the "advanced" editing & design features it had in contemporary web editors. So I created my own - with object inspectors, command palettes and syntax checking for the holly triad of HTML/CSS, JavaScript and PHP. Coincidentally, the syntax checker was the reason I ended up doing programming languages & compilers after I went to the university. The experience writing it (without any knowledge about lexing or parsing at the time) was so painful that I considered the whole field dead and wanted to specialize in CPU design instead. But the Compilers 101 course at the uni changed my mind completely when I saw the Chomsky hierarchy for the first time and realized how much pain I could have saved myself with proper knowledge:)
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p>The above are just the largest projects I did, I have been part of many others - from designing and implementing educational games for kids with Down's Syndrome to weather forecasting for the <a href="https://www.cs.cas.cz/en" target="blank">Czech Academy of Sciences</a> and to a plethora of smaller, mostly embedded, projects. For somewhat fuller list of my projects check my github page</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching" class="section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Teaching</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Code Generation (<a href="https://courses.fit.cvut.cz/NI-GEN/" target="blank">NI-GEN</a>)                                
+                                <span class="label label-success">2017 - Now</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Graduate level compiler course focusing on backend implementation and optimizations (register allocation, instruction selection). I believe that in systems programming (whose curriculium it is part of) more so than anywhere else the devil is in the details. Those details cannot be taught during a lecture on slides, so the course is very coursework heavy. But not all details are created equal - the entaglement between instruction selection and register allocation is real and important, the minute details about x86 instruction binary encoding and executable loading is not. That is why with the help of some of my very talented students I have created <a href="other/Tiny86.pdf" target="blank">Tiny86</a>, a virtual machine emulating the interesting (from compiler's perspective) parts of CPU architectures (and not just x86, but also RISC & friends) without drowning students in the "implementation details".  
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Programming Paradigms (<a href="https://courses.fit.cvut.cz/BIE-PPA/" target="blank">BI-PPA</a>)
+                                <span class="label label-success">2016 - now</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Undergraduate introduction to non-imperative programming paradigms. Interestingly, programming languages curriculum at CTU starts with C/C++. This is the first course the students have that exposes them to different ways to think about algorithms. It covers a lot of ground, lambda calculus (for which we have developed an "IDE" and present as a "programming language" - see the <a href="papers/splashe19.pdf" target="blank">SPLASH-E paper</a>), functional programming (Racket in the past, now transitioning to Haskell) and Prolog. 
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Build a JIT with LLVM
+                                <span class="label label-default"> 2017</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Introduction to building a Just In Time compiler using the LLVM, part of <a href="https://pliss2017.github.io/" target="blank">PLISS</a>. Co-taught with Jan Vitek and Oli Fluckiger. Source code available at <a href="https://github.com/rift-lecture/rift" target="blank">github</a>.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                LLVM Compiler System
+                                <span class="label label-default">CTU 2016</span>
+                            </h4>
+                            <p class="list-group-item-text">
+				                Introduction to the LLVM compiler and its use as an optimizing JIT for dynamic languages (<a href="http://bk.fit.cvut.cz/cz/predmety/00/00/00/00/00/00/04/68/84/p4688406.html" target="blank">MI-LCF</a>).
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Embedded Programming 
+                                <span class="label label-default">2015</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                I believe that embedded programming is particularly great introduction to STEM due to its tangibility. Unfortunately, it also comes with increased cost of entry. While teaching at the grammar school, I have successfully applied for a Google <a href="other/codeweek.pdf">CodeWeek</a> funding that provided ample hardware for the kids to tinker with and I taught the first year of the embedded programming voluntary course at the school.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Advanced Programming in C++
+                                <span class="label label-default">2013-2015</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Voluntary high school course for older students (14y+) that taught them basics of C++ (manual memory management as a feature, OOP and programming design) as well as introduction to interesting, but more advanced topics from computer science - grammars (as I wanted to avoid students falling into the same trap I did with not knowing lexer from a parser:), evolutionary programming, basics of computer graphics, interpreters, etc.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Informatics
+                                <span class="label label-default">2007-2009</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                I have developed a brand new course for compulsory informatics at a high school switching from Pascal to Python. I have taught the pilot two classes and onboarded the other techers on the new course design. The change was extremely well received and has been used for many years to come. 
+                            </p>
+                        </li>
+                    </ul>
+                    <p>I am generally available at CTU on Fridays, but please arrange consultations for current courses by <a class="page-scroll" href="#contact">email</a>. Online via Teams or Zoom is also possible with a more relaxed scheduling. If you are coming from outside, please note that some of the course links might not work as they are internal to the CTU.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Research -->
+    <section id="research" class="section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Research</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/ecoop24.pdf" target="blank">The Fault in Our Stars: Designing Reproducible Large-Scale Code Analysis Experiments</a>
+                                <span class="label label-success">ECOOP 2024</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Maj P., Muroya, S. L., Di Grazia, L, Vitek J.
+                            </p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/ecoop21.pdf" target="blank">CodeDJ: Reproducible Queries over Large-Scale Software Repositories</a>
+                                <span class="label label-success">ECOOP 2021</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Maj P., Siek K., Vitek J., Kovalenko A.
+                            </p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/splashe19.pdf" target="blank">Lambdulus: teaching lambda calculus practically</a>
+                                <span class="label label-success">SPLASH-E 2019</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                J. Sliacky, P. Maj
+                            </p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/toplas19.pdf" target="blank">On the impact of programming language on code quality: a reproduction study</a>
+                                <span class="label label-primary">TOPLAS 2019</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Berger, E.D., Hollenbeck, C., Maj P., Vitek O., Vitek J.
+                            </p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/oopsla17.pdf" target="blank">DéjàVu: a map of code duplicates on GitHub</a>
+                                <span class="label label-success">OOPSLA 2017</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Lopez C.V., Maj P., Martins P., Saini V., Yang D., Zitny J., Sajnani H., Vitek J
+                            </p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/vee14.pdf" target="blank">A fast abstract syntax tree interpreter for R</a>
+                                <span class="label label-default">VEE 2014</span>
+                            </h4>
+                            <p class="list-group-item-text">Kalibera T., Maj, P., Morandat, F., Vitek, J.; VEE 2014</p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="posters/testr.pdf" target="blank">testR – R language test driven specification</a> (poster)
+                                <span class="label label-default">UseR! 2013</span></h4>
+                            <p class="list-group-item-text">Maj P., Kalibera T., Vitek J.; Best technical presentation award. </p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/ccpe11.pdf" target="blank">A family of real- time Java benchmarks</a>
+                                <span class="label label-success">CCPE 2011</span>
+
+                            </h4>
+                            <p class="list-group-item-text">Kalibera, T., Hagelberg, J., Maj, P., Pizlo, F., Titzer, B. and Vitek, J.</p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/pldi10.pdf" target="blank">Schism: Fragmentation-Tolerant Real-Time Garbage Collection</a>
+                                <span class="label label-success">PLDI 2010</span>
+                            </h4>
+                            <p class="list-group-item-text">Pizlo F., Ziarek L., Maj P., Hosking A., Vitek J., Blanton E.</p>
+                        </li>
+                        <li class="list-group-item papers">
+                            <h4 class="list-group-item-heading">
+                                <a href="papers/eurosys10.pdf" target="blank">High-level Programming of Embedded Hard Real-Time Systems</a>
+                                <span class="label label-success">EuroSYS 2010</span>
+                            </h4>
+                            <p class="list-group-item-text">Pizlo F., Ziarek L., Blanton E., Maj P., Vitek J.</p>
+                        </li>
+                    </ul>
+                    <p>
+                        I have also helped organize various conferences in different roles, mostly as a student voluteer chair.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Work Experience</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Senior Compiler Engineer at <a href="https://azul.com" target="blank">Azul</a>
+                                <span class="label label-success">2023 - Now</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Part of the Azul Prime Java VM group, working on the fastest Java virtual machine available and its final tier LLVM-based optimizer and code generator. While at Azul, I was responsible for improving the VM’s warmup times (devising metrics and improving the code), dealt with key customers with piloting the VM and I lead the performance analysis team (4 people).
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Assistant Profesor <a href="https://www.fit.cvut.cz/en" target="blank">FIT CTU</a>
+                                <span class="label label-success">2023 - Now</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Focused on teaching, developed the NI-GEN course (graduate compilers, ~20 students) and BI-PPA (undergraduate programming paradigms, ~150 students). Leading bachelor and master theses, many of which received dean awards for outstanding theses. 
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Senior Developer at <a href="https://www.0xdata.com" target="blank">0xdata</a>. inc.
+                                <span class="label label-default">2012</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Working on the design & implementation of almost all parts of the distributed non SQL big data store and analytics framework including core messaging, user-level API, distributed execution, initial implementation of R-like distributed queries on the cloud system.
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                Compiler Engineer at <a href="http://www.snsys.com" target="blank">SNSystems</a> Ltd.
+                                <span class="label label-default">2010 - 2012</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Responsible for correcting bugs & developing new features for the SN compiler that is used by most developers for Sony Playstation 3, PSP and PS Vita. Apart from the compiler, also responsible for implementing PS Vita assembler from scratch (main developer).
+                            </p>
+                        </li>
+                    </ul>
+                    <h1>Education</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                PhD, <a href="https://www.fit.cvut.cz/en" target="blank">FIT CTU</a>
+                                <span class="label label-success">2016 - 2023</span>
+                            </h4>
+                            <p class="list-group-item-text">
+                                Co-Advised by <a href="https://janvitek.org" target="blank">Jan Vitek</a> and <a href="https://users.fit.cvut.cz/~janousej/" target="blank">Jan Janousek</a>. Thesis: <a href="other/thesis.pdf" target="blank">Analyzing Large Scale Code Repositories</a>
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">MEng, <a href="http://www.fel.cvut.cz/en" target="blank">FEE CTU</a>
+                                <span class="label label-default">2007 - 2009</span>
+                            </h4>
+                            <p class="list-group-item-text">Thesis title: <a href="other/crosscheck.pdf" target="blank"><i>Source Code Plagiarism Detection</i></a>, graduated s. c. l. Dean's award for outstanding Master thesis</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4 class="list-group-item-heading">Erasmus studentship, <a href="http://www.bristol.ac.uk" target="blank">University of Bristol</a>, UK.
+                                <span class="label label-default">2006 - 2007</span>
+                            </h4>
+                            <p class="list-group-item-text">1st class degree from major subjects taken. Advised by <a href="https://www.linkedin.com/in/henkmuller" target="blank">Henk Muller</a></p>
+                        </li>
+                    </ul>
+                    <p>The above is heavily abridged, <a href="other/resume.pdf" target="blank">full CV</a> is also available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="contact_name">
+                        Petr Maj
+                    </p>
+                    <p class="contact_address">
+                        Department of Theoretical Computer Science<br/>
+                        Faculty of Information Technology, Czech Technical University<br/>
+                        Thakurova 9, 16000 Praha 6<br/>
+                        Czech Republic
+                    </p>
+                    <p class="contact_email">
+                        <script type="text/javascript" src="email.js"></script>
+                        <noscript>peta.maj82 [the usual email character here] gmail [dot] com</noscript>
+                    </p>
+                    <p class="contact_scholar">
+                        <a href="https://scholar.google.com/citations?user=Zk9SQUAAAAAJ&hl=en">h-index: 8</a>
+                    </p>
+                    <p class="contact_linkedin">
+                        <a href="https://www.linkedin.com/in/petr-maj-30078416" target="blank">Linked-In</a>
+                    </p>
+                    <p class="contact_github">
+                        <a href="https://github.com/zduka" target="blank">zduka@github</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="footer_padding">
+            </div>
+        </div>
+    </section>
+    <div class="container" id="footer">
+        Created using <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://startbootstrap.com/template-overviews/scrolling-nav/">Scrolling Nav</a> from Start Bootstrap and <a href="http://glyphicons.com/">Glyphicons</a>.
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
